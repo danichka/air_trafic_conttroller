@@ -1,21 +1,21 @@
 class Airplane
 
   def initialize
-    @model = "TU-144"
+    @model     = "TU-144"
     @passenger = 100
-    @airline = "Aeroflot"
+    @airline   = "Aeroflot"
+    @runway    = Runway.new #создаем объект класса Runway
+    @terminal  = Terminal.new
   end
   
-  attr_reader :airline
-  attr_writer :airline
+ 
+  attr_reader :airline, :model, :passenger, :runway
+  attr_writer :airline, :model, :passenger, :runway
 
 
-  #def airline
-    #return @airline
-  #end 
+  def airline_inf1 # c помощью #{} возвращаем несколько свойств из других классов в строке
+    return "#{@airline} #{@model} #{@runway.direction} #{@passenger} #{@terminal.sector} #{@terminal.number}"
+  end 
 
-  #def airline=(airline_name)
-    #@airline = airline_name
-  #end
 
 end

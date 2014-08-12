@@ -3,15 +3,9 @@ class Runway
 	def initialize
 		@direction = "360º"
 		@pavement = "asphalt"
-		@length = 500
+		@length = 1000
 	end
 
-	def direction
-		return @direction
-	end
-
-	def direction=(direction_degree)
-		@direction = direction_degree
-	end
+	attr_accessor :direction, :pavement, :length
 
 end
