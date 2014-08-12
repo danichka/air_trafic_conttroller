@@ -1,9 +1,9 @@
 class Terminal
 
-  def initialize
-   	@sector = "A"
-   	@number = "1"
-    @bandwidth = 1000
+  def initialize(inf)
+   	@sector      = inf[:sector   ]
+   	@number      = inf[:number   ]
+    @bandwidth   = inf[:bandwidth]
   end
   
   attr_accessor :sector, :number

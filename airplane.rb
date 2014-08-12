@@ -5,7 +5,7 @@ class Airplane
     @passenger = 100
     @airline   = "Aeroflot"
     @runway    = Runway.new #создаем объект класса Runway
-    @terminal  = Terminal.new
+    #@terminal  = Terminal.new
   end
   
  
