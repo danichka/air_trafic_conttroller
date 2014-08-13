@@ -1,8 +1,8 @@
 class Radar
 
 	def initialize(options)
-    @radius    = options[ :radius    ] 
-    @frequency = options[ :frequency ]
+    @radius              = options[ :radius    ] 
+    @frequency           = options[ :frequency ]
   end
   
   attr_reader :radius, :frequency

@@ -1,7 +1,8 @@
 require_relative "airplane"
 require_relative "radar"
 require_relative "runway"
-require_relative "terminal"
+require_relative "terminal" 
+require_relative "weather"
 
 
 airplane1 = Airplane.new
@@ -15,7 +16,6 @@ runway2   = Runway.new
 radar_inf = Radar.new({ :radius => "200", :frequency => "0,5"  })
 
 terminal_inf = Terminal.new({ :sector => "A", :number => "3" })
-
 
 puts radar_inf.radius
 puts radar_inf.frequency
@@ -53,8 +53,15 @@ puts runway2.direction
 puts runway2.pavement
 
 puts runway2.length
-
+ 
 puts ""
 
+weather = Weather.new
+puts weather.weather_inf
+#weather = ["rain", "hail", "fog", "clear"]
+#puts weather[rand(weather.size)]
+temperatur = Weather.new
+puts weather.temperature_inf
+puts rand(10..30).to_s+"º"
 #puts airplane3.airline_inf1 #возвращает иформацию о самолете
  
