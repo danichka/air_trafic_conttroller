@@ -1,11 +1,11 @@
 class Runway
 
-	def initialize
-		@direction = "360º"
-		@pavement = "asphalt"
-		@length = 1000
-	end
+  def initialize(options)
+    @direction = options[:direction]
+    @pavement  = options[:pavement ]
+    @length    = options[:length   ]
+  end
 
-	attr_accessor :direction, :pavement, :length
-
+  attr_accessor :direction, :pavement, :length
+  
 end
