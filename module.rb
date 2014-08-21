@@ -1,4 +1,4 @@
-module AddArrey
+module AddAirplane
  
   def add_airplane(a)
     @airplanes << a
