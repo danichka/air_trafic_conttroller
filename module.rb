@@ -1,7 +1,7 @@
 module AddAirplane
  
-  def add_airplane(a)
-    @airplanes << a
+  def add_airplane(airplane)
+    @airplanes << airplane
   end
   
 end

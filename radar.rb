@@ -1,15 +1,15 @@
 class Radar
 
-	def initialize(options)
+  def initialize(options)
     @radius    = options[:radius   ] 
     @frequency = options[:frequency]
     @airplanes = []
   end
 
-  include AddArrey
+  include AddAirplane
   
-  def filter(s)
-    @airplanes.select { |a| a <= (s) }
+  def filter(parameter)
+    @airplanes.select { |a| a.speed <= parameter }
   end
 
 attr_accessor :radius, :frequency, :airplanes
