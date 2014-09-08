@@ -7,10 +7,6 @@ describe Radar do
     @radar = Radar.new(radius: 10)
   end
 
-  it "the possibility of adding to the array of aircraft" do
-  
-  end
-
   it "returns the number" do
     @radar.radius.should == 10
   end

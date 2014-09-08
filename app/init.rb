@@ -15,7 +15,7 @@ airplane2 = CivilAirplane.new(model: "TU-144", airline: "Aeroflot", seats_no: 30
 airplane3 = MilitaryAirplane.new(model: "T-50", airline: "ВВС" , bombs_no: 4, speed: 980)
 airplane4 = CivilAirplane.new(model: "Airobus", airline: "Transaero", seats_no: 1, speed: 1050)
 
-runway1   = ConcreteRunway.new(direction: 240, pavement: "concrete", length: 800)
+runway1   = ConcreteRunway.new(direction: 240, pavement: "concrete", length: 600)
 runway2   = AsphaltRunway.new(direction: 125, pavement:"asphalt", length: 1260)
 
 radar = Radar.new(radius: 600)
@@ -39,10 +39,10 @@ puts runway1.length
 puts runway1.length_controller
 puts "\n"
 
-puts airplane2.model
-puts airplane2.airline
-puts airplane2.seats_no
-puts airplane2.speed
+# puts airplane2.model
+# puts airplane2.airline
+# puts airplane2.seats_no
+# puts airplane2.speed
 
 
 puts runway2.direction
@@ -57,9 +57,9 @@ puts rand(10..30).to_s+"º"
 
 puts "\n"
 
-puts terminal.sector
-puts terminal.number
-puts terminal.bandwidth
+# puts terminal.sector
+# puts terminal.number
+# puts terminal.bandwidth
 
 terminal.add_airplane(airplane1)
 terminal.add_airplane(airplane2)
