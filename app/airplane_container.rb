@@ -4,8 +4,8 @@ module AirplaneContainer
 
   def add_airplane(airplane)
     @airplanes << airplane 
-    raise "invalid airplane бу-бу-бу" #if airplane.is_a? CivilAirplane
-    # else airplane.is_a? MilitaryAirplane
+    unless airplane.is_a?(Airplane)    
+      raise "invalid airplane" 
     end
   end
 

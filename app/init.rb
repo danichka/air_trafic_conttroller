@@ -1,4 +1,4 @@
-require_relative "airplanecontainer"
+require_relative "airplane_container"
 require_relative "airplane"
 require_relative "civil_airplane"
 require_relative "military_airplane"
@@ -39,10 +39,10 @@ puts runway1.length
 puts runway1.length_controller
 puts "\n"
 
-# puts airplane2.model
-# puts airplane2.airline
-# puts airplane2.seats_no
-# puts airplane2.speed
+puts airplane2.model
+puts airplane2.airline
+puts airplane2.seats_no
+puts airplane2.speed
 
 
 puts runway2.direction
@@ -57,9 +57,9 @@ puts rand(10..30).to_s+"º"
 
 puts "\n"
 
-# puts terminal.sector
-# puts terminal.number
-# puts terminal.bandwidth
+puts terminal.sector
+puts terminal.number
+puts terminal.bandwidth
 
 terminal.add_airplane(airplane1)
 terminal.add_airplane(airplane2)
